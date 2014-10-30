@@ -43,8 +43,8 @@ Returns [Promise](https://www.npmjs.org/package/bluebird) containing a list of t
 ## License
 MIT
 
-[npm-image]: https://img.shields.io/npm/v/node-pgrep.svg?style=flat
-[npm-url]: https://npmjs.org/package/node-pgrep
+[npm-image]: https://img.shields.io/npm/v/pgrep.svg?style=flat
+[npm-url]: https://npmjs.org/package/pgrep
 [travis-image]: https://img.shields.io/travis/tjwebb/node-pgrep.svg?style=flat
 [travis-url]: https://travis-ci.org/tjwebb/node-pgrep
 [daviddm-image]: http://img.shields.io/david/tjwebb/node-pgrep.svg?style=flat
