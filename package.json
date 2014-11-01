@@ -1,6 +1,6 @@
 {
   "name": "pgrep",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "pgrep api for node.js",
   "main": "index.js",
   "scripts": {
