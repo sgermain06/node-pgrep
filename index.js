@@ -28,7 +28,7 @@ var flagMap = {
 };
 
 exports.exec = function (options) {
-  var args = [ options.name ];
+  var args = _.compact([ options.name ]);
   delete options.name;
   args = _.compact(args.concat(_.flatten(_.map(options, function (value, flag) {
     if (!flagMap[flag]) {
@@ -40,9 +40,9 @@ exports.exec = function (options) {
     proc.exec('pgrep ' + args.join(' '), function (error, stdout, stderr) {
       if (error) return reject(error);
 
-      resolve(_.map(_.compact(stdout.split('\n')), function (pid) {
+      resolve(_.compact(_.map(stdout.split('\n'), function (pid) {
         return parseInt(pid);
-      }));
+      })));
     });
   });
 };
